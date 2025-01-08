@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    display: block; 
+    min-height: 100vh;
+    background-color: rgb(124, 157, 228);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.container{
+    display: block;
+    background-color: rgba(255,255,255, 0.3);
+    padding: 28px;
+    border-radius: 7px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.heading{
+    font-size: 28px;
+}
+
+.input{
+    height: 53px;
+    width: 300px;
+    background-color: rgba(255,255,255,0.6);
+    border-color: rgba(255,255,255,0.4);
+    font-size: 16px;
+    padding: 0 42px;
+    border-radius: 5px;
+}
+
+.meaning-container{
+    display: none;
+    justify-items: center;
+}
+
+#save-word-btn{
+    background-color: rgb(52, 77, 159);
+    color:white;
+    border-radius: 30px;
+    padding: 10px;
+    width: 150px;
+}
+#save-word-btn:hover{
+    background-color: rgba(71, 93, 167, 0.705);
+}
+
+#saved-words-container{
+    display: block;
+    background-color: rgba(255,255,255, 0.3);
+    padding: 28px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#saved-words-container h3 {
+    margin-bottom: 10px;
+}
+
+#saved-words-container p{
+    font-size: 16px;
+}
+
+#saved-words-list {
+    list-style-type: none;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+/* -------------------------------------------------------------- */
+
+
+
+
+
+
+/* QUIZ */
+.quiz-option {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#quiz-options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quiz-option:hover {
+    background-color: #45a049;
+}
+
+#quiz-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#quiz-result {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#quiz-question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#quiz-answer{
+    background-color: rgb(212, 235, 255);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#submit-answer-btn{
+    background-color: #c3c3c3;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#show-word-bank-btn{
+    margin-top: 10px;
+    background-color: rgba(124, 157, 228, 0.466);
+    border-radius: 30px;
+}
+
+#word-bank-list{
+    list-style-type: none;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}

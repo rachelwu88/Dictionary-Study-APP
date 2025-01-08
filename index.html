@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Dictionary</a></li>
+            <li><a href="quiz.html">Quiz Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="heading">English Dictionary</h1>
+        <input placeholder="Search a word" type="text" class="input" id="input">
+        <p class="info-text" id="info-text">Type a word and press enter</p>
+        <div class="meaning-container" id="meaning-container">
+            <p>Word Title: <span class="title" id="title">___</span></p>
+            <p>Meaning: <span class="meaning" id="meaning">___</span></p>
+            <audio src="" controls id="audio"></audio>
+            <button id="save-word-btn">Save Word</button>
+        </div>
+    </div>
+    
+    <div id="saved-words-container">
+        <h3>Saved Words</h3>
+        <p id="saved"></p>
+        <ul id="saved-words-list"></ul>
+    </div>
+</body>
+</html>
