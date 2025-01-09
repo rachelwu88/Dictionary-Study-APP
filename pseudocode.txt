@@ -1,0 +1,55 @@
+index.html:
+
+- Create a Navbar with links to Dictionary and Quiz Me
+- Create a container for search input and word meaning
+- Create a saved words section with a list
+
+
+------------------------------------------
+script.js:
+
+1. Initialize DOM elements
+2. Retrieve saved words from localStorage
+3. Display saved words in a list
+4. Add event listeners for word search and saving
+   - When a word is searched, fetch the definition from an API
+   - Display the word's meaning and pronunciation (if available)
+5. Allow user to save a word to localStorage and display it in the saved words list
+6. Enable deleting saved words
+7. Handle edge cases (API errors, empty saved list)
+
+------------------------------------------
+quiz.html:
+
+- Create a Navbar with links to Dictionary and Quiz Me
+- Create a container for quiz functionality
+- Display a quiz question, input for answer, and submit button
+- Display result for correct/incorrect answer
+- Provide a "Show Word Bank" button to show/hide saved words
+
+------------------------------------------
+quiz.js:
+
+1. Initialize DOM elements and variables for saved words, questions, and score
+2. Load the next quiz question from the saved words
+   - Fetch the meaning of the word from an API
+3. Display the question and wait for the user's input
+4. When the answer is submitted, compare it with the correct word
+   - Update the result with "Correct" or "Incorrect" message
+   - Increment score if correct
+5. After all questions are answered, display the final score
+6. Implement functionality to toggle the visibility of the word bank
+   - Show the list of saved words when the word bank is toggled
+
+
+
+------------------------------------------
+css file:
+
+- create styling for buttons
+- create styling for input fields
+- create styling for containers
+- create styling for saved words list
+- create styling for quiz question and answer fields
+- create styling for result message
+
